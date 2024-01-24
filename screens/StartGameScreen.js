@@ -34,6 +34,7 @@ function StartGameScreen({onPickNumber}) {
 
     return (
         <View style={styles.rootContainer}>
+            <Title> Guess my number </Title>
             <Card>
                 <InstructionText> 
                     Enter a number: 
@@ -53,8 +54,7 @@ function StartGameScreen({onPickNumber}) {
                     </View> 
                     <View style={styles.buttonContainer}>
                         <PrimaryButton onPress={confirmInputHandler}> Confirm </PrimaryButton>
-                    </View>
-                    
+                    </View>         
                 </View>
             </Card>
         </View>
@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     numberInput: {
-        height: 50,
-        width: 50,
+        height: 150,
+        width: 150,
         fontSize: 32,
         borderBottomColor: Colors.accent500,
         borderBottomWidth: 2,

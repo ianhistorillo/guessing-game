@@ -1,8 +1,12 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import Colors from "../../constants/color";
 
 function Card({children}) {
-    return <View style={styles.card}> {children} </View>
+    return (
+        <View style={styles.card}> 
+            {children}
+        </View>
+    );
 }
 
 export default Card;
